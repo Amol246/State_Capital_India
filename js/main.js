@@ -3,7 +3,8 @@ const matchList = document.getElementById('match-list');
 
 //Search states.json and filter it
 const searchStates = async searchText =>{
-const res = await fetch('../data/states.json');
+//const res = await fetch('../data/states.json');
+const res = await fetch('https://amol246.github.io/jsonapi/states.json');
 const states = await res.json();
 
 //console.log(states);
